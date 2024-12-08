@@ -26,6 +26,7 @@ export type SiteConfig = {
     logo?: Image;
     title: string;
     subtitle?: string;
+    author: string;
     description: string;
     image?: Image;
     headerNavLinks?: Link[];
@@ -38,12 +39,13 @@ export type SiteConfig = {
 };
 
 const siteConfig: SiteConfig = {
-    title: 'Dante',
-    subtitle: 'Minimal Astro.js theme',
-    description: 'Astro.js and Tailwind CSS theme for blog and portfolio by justgoodui.com',
+    title: 'Fraser Embrey Portfolio',
+    subtitle: 'Fraser Embrey - UX/UI Designer | Creating User-Centered, Accessible, and Intuitive Experiences',
+    author: 'Fraser Embrey',
+    description: 'Explore the portfolio of Fraser Embrey, a UX/UI designer specializing in user-centered web and app design. Discover case studies, design insights, and creative solutions focused on accessibility, innovation, and exceptional user experiences.',
     image: {
-        src: '/dante-preview.jpg',
-        alt: 'Dante - Astro.js and Tailwind CSS theme'
+        src: '/preview.jpg',
+        alt: 'Fraser Embrey Portfolio Website'
     },
     headerNavLinks: [
         {
@@ -76,32 +78,31 @@ const siteConfig: SiteConfig = {
             text: 'Terms',
             href: '/terms'
         },
-        {
-            text: 'Download theme',
-            href: 'https://github.com/JustGoodUI/dante-astro-theme'
-        }
     ],
     socialLinks: [
         {
             text: 'Dribbble',
-            href: 'https://dribbble.com/'
+            href: 'https://dribbble.com/frsr'
         },
         {
             text: 'Instagram',
-            href: 'https://instagram.com/'
+            href: 'https://instagram.com/fraserembrey'
         },
         {
-            text: 'X/Twitter',
-            href: 'https://twitter.com/'
+            text: 'CodePen',
+            href: 'https://codepen.io/frsr'
+        },
+        {
+            text: 'GitHub',
+            href: 'https://github.com/fraserembrey'
+        },
+        {
+            text: 'LinkedIn',
+            href: 'https://linkedin.com/in/fraserembrey'
         }
     ],
     hero: {
-        title: 'Hi There & Welcome to My Corner of the Web!',
-        text: "I'm **Ethan Donovan**, a web developer at Amazing Studio, dedicated to the realms of collaboration and artificial intelligence. My approach involves embracing intuition, conducting just enough research, and leveraging aesthetics as a catalyst for exceptional products. I have a profound appreciation for top-notch software, visual design, and the principles of product-led growth. Feel free to explore some of my coding endeavors on <a href='https://github.com/JustGoodUI/dante-astro-theme'>GitHub</a> or follow me on <a href='https://twitter.com/justgoodui'>Twitter/X</a>.",
-        image: {
-            src: '/hero.jpeg',
-            alt: 'A person sitting at a desk in front of a computer'
-        },
+        title: 'Hey, I’m Fraser',
         actions: [
             {
                 text: 'Get in Touch',
@@ -109,11 +110,11 @@ const siteConfig: SiteConfig = {
             }
         ]
     },
-    subscribe: {
-        title: 'Subscribe to Dante Newsletter',
-        text: 'One update per week. All the latest posts directly in your inbox.',
-        formUrl: '#'
-    },
+    // subscribe: {
+    //     title: 'Subscribe to Dante Newsletter',
+    //     text: 'One update per week. All the latest posts directly in your inbox.',
+    //     formUrl: '#'
+    // },
     postsPerPage: 8,
     projectsPerPage: 8
 };

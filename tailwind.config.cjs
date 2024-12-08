@@ -5,12 +5,13 @@ module.exports = {
     darkMode: 'class',
     theme: {
         fontFamily: {
-            sans: ['Inter', ...defaultTheme.fontFamily.sans],
-            serif: ['Newsreader', ...defaultTheme.fontFamily.serif]
+            sans: ['Be Vietnam Pro', ...defaultTheme.fontFamily.sans],
+            serif: ['Petrona', ...defaultTheme.fontFamily.serif]
         },
         extend: {
             textColor: {
-                main: 'rgb(var(--color-text-main) / <alpha-value>)'
+                main: 'rgb(var(--color-text-main) / <alpha-value>)',
+                link: 'rgb(0,146,192,100)'
             },
             backgroundColor: {
                 main: 'rgb(var(--color-bg-main) / <alpha-value>)',
@@ -25,7 +26,7 @@ module.exports = {
                         '--tw-prose-body': theme('textColor.main / 100%'),
                         '--tw-prose-headings': theme('textColor.main / 100%'),
                         '--tw-prose-lead': theme('textColor.main / 100%'),
-                        '--tw-prose-links': theme('textColor.main / 100%'),
+                        '--tw-prose-links': theme('textColor.link / 100%'),
                         '--tw-prose-bold': theme('textColor.main / 100%'),
                         '--tw-prose-counters': theme('textColor.main / 100%'),
                         '--tw-prose-bullets': theme('textColor.main / 100%'),

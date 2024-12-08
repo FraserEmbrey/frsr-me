@@ -33,14 +33,14 @@ const navLinks = siteConfig.footerNavLinks || [];
                             target="_blank"
                             rel="noopener noreferer"
                         >
-                            {link.text}
+                        {link.text}&nbsp;↗
                         </a>
                     ))}
                 </div>
             )
         }
         <p class="text-sm">
-            &copy; {new Date().getFullYear()}&nbsp;<a class="hover:underline hover:underline-offset-2" href="/">{siteConfig.title}</a>. All rights reserved.
+            &copy; {new Date().getFullYear()}&nbsp;{siteConfig.author}. All rights reserved.
         </p>
     </div>
 </footer>

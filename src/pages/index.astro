@@ -3,10 +3,12 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Button from '../components/Button.astro';
 import Hero from '../components/Hero.astro';
+import AboutSite from '../components/AboutSite.astro'
 import PostPreview from '../components/PostPreview.astro';
 import ProjectPreview from '../components/ProjectPreview.astro';
 import siteConfig from '../data/site-config';
 import { sortItemsByDateDesc } from '../utils/data-utils';
+import SectionHeading from '../components/SectionHeading.astro';
 
 const posts = (await getCollection('blog')).sort(sortItemsByDateDesc);
 const featuredPosts = posts.filter(({ data }) => data.isFeatured);
@@ -20,7 +22,7 @@ const featuredProjects = projects.filter(({ data }) => data.isFeatured);
     {
         featuredProjects?.length > 0 && (
             <div class="mb-16 sm:mb-24">
-                <h2 class="mb-12 text-xl font-serif italic sm:mb-16 sm:text-2xl">Projects</h2>
+                <SectionHeading>Projects</SectionHeading>
                 {featuredProjects.map((project) => (
                     <ProjectPreview project={project} class="mb-10 sm:mb-12" headingLevel="h3" />
                 ))}
@@ -33,7 +35,7 @@ const featuredProjects = projects.filter(({ data }) => data.isFeatured);
     {
         featuredPosts?.length > 0 && (
             <div class="mb-16 sm:mb-24">
-                <h2 class="mb-12 text-xl font-serif italic sm:mb-16 sm:text-2xl">Writing</h2>
+              <SectionHeading>Blog</SectionHeading>
                 {featuredPosts.map((post) => (
                     <PostPreview post={post} class="mb-10 sm:mb-12" headingLevel="h3" />
                 ))}
@@ -43,4 +45,5 @@ const featuredProjects = projects.filter(({ data }) => data.isFeatured);
             </div>
         )
     }
+    <AboutSite />
 </BaseLayout>

@@ -15,6 +15,9 @@
         --color-bg-muted: 36 36 36; /* #242424 */
         --color-border-main: 242 241 236; /* #F2F1EC */
     }
+    p a {
+      color: rgb(0,146,192);
+    }
 
     /* Cyan */
     /*
