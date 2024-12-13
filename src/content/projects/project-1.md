@@ -10,10 +10,11 @@ seo:
 
 ![Project preview](/personal-website.jpg)
 
-**Project Overview:**
+## Project Overview
+
 This project involved creating a new personal website to showcase my portfolio and blog using Astro, a static site generator. My goal was to replace my hand-coded website with a more modern, scalable, and maintainable solution. The design leverages the clean and responsive Dante theme, which I customized extensively to reflect my personal brand.
 
-**Development Process:**
+## Development Process
 
 1. **Choosing the Tech Stack:**
    - Decided to use Astro for its flexibility and performance in building static sites.
@@ -38,15 +39,15 @@ This project involved creating a new personal website to showcase my portfolio a
    - Structured the website to support scalable and dynamic content using Astro’s built-in Markdown and data-fetching capabilities.
    - Implemented modular components to easily add or update portfolio case studies and blog posts.
 
-**Key Challenges:**
+## Key Challenges
 - Adapting the pre-built Dante theme to align with my unique design vision.
 - Ensuring smooth integration of custom fonts and maintaining performance.
 - Setting up a seamless workflow for continuous deployment using GitHub and Netlify.
 
-**Results:**
+## Results
 The updated website is modern, scalable, and easy to maintain. The clean design and improved functionality enhance user experience while ensuring content updates can be made effortlessly. The use of Astro and Netlify has streamlined development, hosting, and deployment, making this project a significant upgrade from my previous self-coded website.
 
-**Tech Stack:**
+## Tech Stack
 - **Framework:** Astro
 - **Theme:** Dante (customized)
 - **Hosting:** Netlify
