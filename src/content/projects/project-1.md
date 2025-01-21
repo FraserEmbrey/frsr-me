@@ -3,6 +3,8 @@ title: 'Personal Website with Astro'
 description: A modern and scalable personal website built with Astro, leveraging the Dante theme and customized with unique fonts and design elements. Managed development and deployment using Git and published on Netlify.
 publishDate: 'Dec 13 2024'
 isFeatured: true
+client: Myself
+year: 2024
 seo:
   image:
     src: '/personal-website.jpg'

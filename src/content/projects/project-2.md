@@ -3,6 +3,8 @@ title: 'Designing the Robin’s Hood Web App'
 description: A user-focused design and management process for the Robin’s Hood web app, utilizing a modular UX design and a database-driven approach to development, bug tracking, and testing.
 publishDate: 'Mar 09 2024'
 isFeatured: true
+client: Octoply Ltd.
+year: 2019
 seo:
   image:
     src: '/robins-hood.jpg'

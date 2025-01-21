@@ -3,6 +3,8 @@ title: 'Building the Student Travel Tips Website with Webflow'
 description: A seamless migration of StudentTravelTips.co.uk from WordPress to Webflow, featuring a custom CMS for offers and blogs, built from a Figma design.
 publishDate: 'Oct 21 2024'
 isFeatured: true
+client: Student Travel Tips
+year: 2023
 seo:
   image:
     src: '/student-travel-tips.jpg'

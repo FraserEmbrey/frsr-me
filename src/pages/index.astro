@@ -22,7 +22,7 @@ const featuredProjects = projects.filter(({ data }) => data.isFeatured);
     {
         featuredProjects?.length > 0 && (
             <div class="mb-16 sm:mb-24">
-                <SectionHeading>Projects</SectionHeading>
+              <SectionHeading heading="Projects"/>
                 {featuredProjects.map((project) => (
                     <ProjectPreview project={project} class="mb-10 sm:mb-12" headingLevel="h3" />
                 ))}
@@ -35,7 +35,7 @@ const featuredProjects = projects.filter(({ data }) => data.isFeatured);
     {
         posts?.length > 0 && (
             <div class="mb-16 sm:mb-24">
-              <SectionHeading>Blog</SectionHeading>
+              <SectionHeading heading="Blog"/>
                 {posts.map((post) => (
                     <PostPreview post={post} class="mb-10 sm:mb-12" headingLevel="h3" />
                 ))}
