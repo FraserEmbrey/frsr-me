@@ -1,4 +1,14 @@
-# A year of film photography
+---
+title: "A year of film photography"
+excerpt: A year ago, I haggled to get a film camera for just €15 at a market in France. As a predominantly digital shooter but over a decade of experience shooting black and white film; I decided to experiment with colour film. This is a review of my experiences with different films, my thoughts and the lessons I’ve learned and why I ultimately have decided to give up on colour film
+publishDate: '21 Apr 2025'
+tags:
+  - Photography
+seo:
+  image:
+    src: 'images/IMG_0217.jpeg'
+    alt: "Market stall in France"
+---
 One year, dozens of rolls, no regrets but I don’t think I’ll be shooting colour film any more. Read on to find out why.
 
 A year ago, I haggled to get a film camera for just €15 at a market in France. As a predominantly digital shooter but over a decade of experience shooting black and white film; I decided to experiment with colour film. This is a review of my experiences with different films, my thoughts and the lessons I’ve learned and why I ultimately have decided to give up on colour film.
