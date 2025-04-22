@@ -39,7 +39,7 @@ export type SiteConfig = {
 };
 
 const siteConfig: SiteConfig = {
-    title: 'Fraser Embrey Portfolio',
+    title: 'Fraser Embrey | UX/UI designer',
     subtitle: 'Fraser Embrey - UX/UI Designer | Creating User-Centered, Accessible, and Intuitive Experiences',
     author: 'Fraser Embrey',
     description: 'Explore the portfolio of Fraser Embrey, a UX/UI designer specializing in user-centered web and app design. Discover case studies, design insights, and creative solutions focused on accessibility, innovation, and exceptional user experiences.',

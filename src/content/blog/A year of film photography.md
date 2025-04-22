@@ -1,6 +1,6 @@
 ---
 title: "A year of film photography"
-excerpt: A year ago, I haggled to get a film camera for just €15 at a market in France. As a predominantly digital shooter but over a decade of experience shooting black and white film; I decided to experiment with colour film. This is a review of my experiences with different films, my thoughts and the lessons I’ve learned and why I ultimately have decided to give up on colour film
+excerpt: My experience and what I learned from shooting colour film for a year
 publishDate: '21 Apr 2025'
 tags:
   - Photography
@@ -23,7 +23,7 @@ I popped into a local shop and picked up a box of Kodak gold, which I had the un
 That first roll of Kodak gold was quickly filled with a variety of shots from around my hometown of Brighton. The novelty of both the camera and media imbued my photography with a sense of fun. Consequently I was pleasantly surprised with the images I took.
 ![](images/IMG_7787.jpeg)<!-- {"width":647} -->
 ![](images/IMG_7767.jpeg)<!-- {"width":325} -->![](images/IMG_7784.jpeg)<!-- {"width":323} -->
-![](images/Yashica%2021.avif)<!-- {"width":647} -->
+![](images/basketball.jpeg)<!-- {"width":647} -->
 
 Encouraged by this initial good impression, I was excited to explore and shoot more. After some research, I bought some rolls of Kodak Ektar to try out. Then I needed to try to photograph new environments and scenery, travel seemed like a perfect opportunity.
 
