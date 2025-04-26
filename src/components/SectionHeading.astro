@@ -1,0 +1,23 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+type HeadingProps = HTMLAttributes<'h2'>;
+
+type Props = HeadingProps;
+
+const { heading, href, class: className, ...rest } = Astro.props;
+const headingClasses =
+    'mb-12 text-3xl font-serif font-bold capitalize sm:mb-6 sm:text-3xl';
+const hrClasses =
+    'h-1 my-2 bg-black dark:bg-stone-200';
+const id =
+    encodeURIComponent( heading ).toLowerCase();
+---
+
+{
+    <hr class:list={[hrClasses, className]} {...rest}/>
+    <h2 id={id} class:list={[headingClasses, className]} {...rest}>
+      {heading}
+    </h2>
+}
+

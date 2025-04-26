@@ -1,0 +1,32 @@
+---
+import NavLink from './NavLink.astro';
+import ThemeToggle from './ThemeToggle.astro';
+import siteConfig from '../data/site-config';
+
+const navLinks = siteConfig.headerNavLinks || [];
+---
+
+<nav class="min-h-10 pt-4 pb-12 relative sm:min-h-14 sm:pb-16 md:pt-8">
+    {
+        navLinks.length > 0 && (
+            <div class="w-full max-w-3xl mx-auto relative">
+                <ul id="menu-items" class="menu flex gap-6">
+                    {navLinks.map((link) => (
+                        <li class="py-1">
+                            <NavLink
+                                class="text-xl font-serif text-main font-bold md:text-base"
+                                href={link.href}
+                            >
+                                {link.text}
+                            </NavLink>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        )
+    }
+    <div class="absolute right-0 top-4 z-10 md:top-8">
+        <ThemeToggle />
+    </div>
+</nav>
+
