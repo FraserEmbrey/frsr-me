@@ -6,7 +6,7 @@ tags:
   - Photography
 seo:
   image:
-    src: 'images/IMG_0217.jpeg'
+    src: "/src/content/blog/images/IMG_0217.jpeg"
     alt: "Market stall in France"
 ---
 One year, dozens of rolls, no regrets but I don’t think I’ll be shooting colour film any more. Read on to find out why.

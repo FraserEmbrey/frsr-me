@@ -7,11 +7,9 @@ client: Student Travel Tips
 year: 2023
 seo:
   image:
-    src: '/student-travel-tips.jpg'
+    src: './images/student-travel-tips.jpg'
     alt: Student Travel Tips website preview
 ---
-
-![Project preview](/student-travel-tips.jpg)
 
 **Project Overview:**
 The Student Travel Tips website redesign involved transitioning from WordPress to Webflow, building a new site based on a Figma design. The project required a fully customized CMS to manage travel offers and blog content, ensuring the platform remained intuitive for editors while delivering a fresh, responsive design for users.

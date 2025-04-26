@@ -23,10 +23,9 @@ export type Subscribe = {
 };
 
 export type SiteConfig = {
+    website: string;
     logo?: Image;
     title: string;
-    subtitle?: string;
-    author: string;
     description: string;
     image?: Image;
     headerNavLinks?: Link[];
@@ -39,78 +38,53 @@ export type SiteConfig = {
 };
 
 const siteConfig: SiteConfig = {
-    title: 'Fraser Embrey | UX/UI designer',
-    subtitle: 'Fraser Embrey - UX/UI Designer | Creating User-Centered, Accessible, and Intuitive Experiences',
-    author: 'Fraser Embrey',
-    description: 'Explore the portfolio of Fraser Embrey, a UX/UI designer specializing in user-centered web and app design. Discover case studies, design insights, and creative solutions focused on accessibility, innovation, and exceptional user experiences.',
+    website: 'https://frsr.me',
+    title: 'Fraser Embrey | UI/UX Designer',
+    description: "I'm a UI/UX designer with a passion for creating beautiful and functional user experiences.",
     image: {
         src: '/preview.jpg',
-        alt: 'Fraser Embrey Portfolio Website'
+        alt: 'Website preview'
     },
     headerNavLinks: [
-        {
-            text: 'Home',
-            href: '/'
-        },
-        {
-            text: 'Projects',
-            href: '/projects'
-        },
-        {
-            text: 'Blog',
-            href: '/blog'
-        }
+        { text: 'Projects', href: '/projects' },
+        { text: 'Blog', href: '/blog' },
+        { text: 'Contact', href: '/contact' }
     ],
     footerNavLinks: [
-        {
-            text: 'About',
-            href: '/about'
-        },
-        {
-            text: 'Contact',
-            href: '/contact'
-        },
-        {
-            text: 'Terms',
-            href: '/terms'
-        },
+        { text: 'Home', href: '/' },
+        { text: 'Projects', href: '/projects' },
+        { text: 'Blog', href: '/blog' },
+        { text: 'Contact', href: '/contact' },
+        { text: 'Photography', href: '/photography' },
+        { text: 'About', href: '/about' },
     ],
     socialLinks: [
-        {
-            text: 'Dribbble',
-            href: 'https://dribbble.com/frsr'
-        },
-        {
-            text: 'Instagram',
-            href: 'https://instagram.com/fraserembrey'
-        },
-        {
-            text: 'CodePen',
-            href: 'https://codepen.io/frsr'
-        },
-        {
-            text: 'GitHub',
-            href: 'https://github.com/fraserembrey'
-        },
-        {
-            text: 'LinkedIn',
-            href: 'https://linkedin.com/in/fraserembrey'
-        }
+        // Professional
+        { text: 'LinkedIn', href: 'https://linkedin.com/in/fraserembrey' },
+        { text: 'GitHub', href: 'https://github.com/fraserembrey' },
+        { text: 'CodePen', href: 'https://codepen.io/frsr' },
+        // Design
+        { text: 'Dribbble', href: 'https://dribbble.com/frsr' },
+        // Social/Photo
+        { text: 'Instagram', href: 'https://instagram.com/fraserembrey' },
+        { text: 'Glass', href: 'https://glass.photo/frsr' },
+        { text: 'Threads', href: 'https://www.threads.com/@fraserembrey' },
     ],
     hero: {
-        title: 'Hey, I’m Fraser',
+        title: 'Hi 👋',
+        image: {
+            src: '/hero.jpeg',
+            alt: 'A person sitting at a desk in front of a computer'
+        },
         actions: [
-            {
-                text: 'Get in Touch',
-                href: '/contact'
-            }
+            { text: 'Get in Touch', href: '/contact' }
         ]
     },
-    // subscribe: {
-    //     title: 'Subscribe to Dante Newsletter',
-    //     text: 'One update per week. All the latest posts directly in your inbox.',
-    //     formUrl: '#'
-    // },
+    subscribe: {
+        title: 'Subscribe to my newsletter',
+        text: 'One update per month. All the latest posts directly in your inbox.',
+        formUrl: 'https://buttondown.com/api/emails/embed-subscribe/fraser'
+    },
     postsPerPage: 8,
     projectsPerPage: 8
 };

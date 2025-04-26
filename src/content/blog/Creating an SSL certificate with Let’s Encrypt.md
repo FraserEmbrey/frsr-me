@@ -6,7 +6,7 @@ tags:
   - Guide
 seo:
   image:
-    src: '/post-1.jpg'
+    src: "./images/SSL.jpg"
     alt: Computer with sublime text open on-screen.
 ---
 A Step-by-Step Guide to Setting Up Let's Encrypt SSL Certificate on a Linux Web Server e.g. AWS

@@ -8,11 +8,9 @@ tags:
   - Digital Wellness
 seo:
   image:
-    src: '/post-2.jpg'
+    src: "./images/post-2.jpg"
     alt: Social media
 ---
-
-![Social media](/post-2.jpg)
 
 The advent of apps and smart devices has profoundly changed the way we live, work, and connect. Our phones and wearables, once tools of convenience, now demand our attention at every buzz and beep. While they promise productivity and connection, they also extract something far more valuable: our focus and autonomy. 
 

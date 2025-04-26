@@ -1,7 +1,9 @@
 ---
+import { Image } from 'astro:assets';
 import { type CollectionEntry, getCollection, render } from 'astro:content';
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
 import ProjectPreview from '../../components/ProjectPreview.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
 import { sortItemsByDateDesc } from '../../utils/data-utils';
 
 export async function getStaticPaths() {
@@ -17,19 +19,55 @@ export async function getStaticPaths() {
     }));
 }
 
-type Props = { project: CollectionEntry<'projects'>; prevProject: CollectionEntry<'projects'>; nextProject: CollectionEntry<'projects'> };
+type Props = {
+    project: CollectionEntry<'projects'>;
+    prevProject: CollectionEntry<'projects'>;
+    nextProject: CollectionEntry<'projects'>;
+};
 
 const { project, prevProject, nextProject } = Astro.props;
-const { title, description, seo } = project.data;
+const { title, description, publishDate, cover, company, seo } = project.data;
 const { Content } = await render(project);
 ---
 
-<BaseLayout title={seo?.title ?? title} description={seo?.description ?? description} image={seo?.image} pageType="article" showHeader={false}>
-    <article class="mb-16 sm:mb-24">
-        <header class="mb-8">
-            <h1 class="text-3xl leading-tight font-serif font-medium sm:text-5xl sm:leading-tight">{title}</h1>
-        </header>
-        <div class="max-w-none prose prose-dante sm:prose-lg">
+<BaseLayout
+    title={seo?.title ?? title}
+    description={seo?.description ?? description}
+    image={seo?.image?.src ? { src: seo.image.src, alt: seo.image.alt } : undefined}
+    pageType="article"
+>
+    {
+        seo?.image?.src && (
+            <section class="relative w-[100vw] left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-64 sm:h-96 mb-8 flex items-end justify-center sm:w-full sm:left-0 sm:right-0 sm:ml-0 sm:mr-0">
+                <Image
+                    src={seo.image.src}
+                    alt={seo.image.alt || title}
+                    class="absolute inset-0 w-full h-full object-cover shadow-lg sm:rounded-xl"
+                    style="z-index: 0;"
+                />
+            </section>
+        )
+    }
+    <div class="w-full max-w-2xl mx-auto -mt-25 z-10 relative">
+        <div class="bg-[rgba(255,255,255,0.7)] backdrop-blur-md rounded-2xl shadow-xl px-6 py-6 mx-4 flex flex-col items-start">
+            <h1 class="text-3xl sm:text-4xl font-extrabold mb-2 leading-tight text-black text-left">{title}</h1>
+            <div class="flex flex-wrap gap-2 text-sm text-gray-700 font-medium mb-2">
+                <FormattedDate date={publishDate} short />
+                {
+                    company && (
+                        <>
+                            <span class="mx-1">|</span>
+                            <span class="">{company}</span>
+                        </>
+                    )
+                }
+            </div>
+        </div>
+    </div>
+    <article class="mb-16 sm:mb-24" style="margin-top:24px;">
+        <div
+            class="max-w-none prose prose-img:rounded-xl prose-img:mx-auto prose-img:my-8 prose-headings:font-bold prose-headings:text-main prose-h1:text-4xl prose-h1:font-extrabold prose-h2:text-3xl prose-h2:font-semibold prose-h3:text-2xl prose-h3:font-semibold prose-p:text-lg prose-p:leading-relaxed prose-a:decoration-0 prose-p:mb-6"
+        >
             <Content />
         </div>
     </article>

@@ -1,15 +1,14 @@
 ---
-type Props = { date: Date };
+type Props = {
+    date: Date;
+    locale?: string;
+    short?: boolean;
+};
 
-const { date } = Astro.props;
+const { date, short = false } = Astro.props as Props;
+const locale = Astro.props.locale ?? 'en-GB';
+
+const formatOptions: Intl.DateTimeFormatOptions = short ? { month: 'long', year: 'numeric' } : { day: '2-digit', month: 'long', year: 'numeric' };
 ---
 
-<time datetime={date.toISOString()}>
-    {
-        date.toLocaleDateString('en-us', {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric'
-        })
-    }
-</time>
+{date instanceof Date && !isNaN(date.getTime()) ? <time datetime={date.toISOString()}>{date.toLocaleDateString(locale, formatOptions)}</time> : null}

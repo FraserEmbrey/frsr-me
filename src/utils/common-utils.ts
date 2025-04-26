@@ -15,3 +15,9 @@ export function slugify(input?: string) {
 
     return slug;
 }
+
+export function estimateReadingTime(text: string, wordsPerMinute = 200): number {
+    if (!text) return 0;
+    const words = text.trim().split(/\s+/).length;
+    return Math.max(1, Math.ceil(words / wordsPerMinute));
+}

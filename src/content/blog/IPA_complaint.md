@@ -6,7 +6,7 @@ tags:
   - General
 seo:
   image:
-    src: '/IPA.jpg'
+    src: "./images/IPA.jpg"
     alt: "Protect Our Privacy: A Call to Action Against Government Surveillance and Anti-Encryption Policies"
 ---
 
