@@ -1,0 +1,56 @@
+---
+import { getCollection } from 'astro:content';
+import Button from '../components/Button.astro';
+import Hero from '../components/Hero.astro';
+import PostPreview from '../components/PostPreview.astro';
+import ProjectPreview from '../components/ProjectPreview.astro';
+import { Content as AboutSite } from '../data/aboutsite.md';
+import siteConfig from '../data/site-config';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { sortItemsByDateDesc } from '../utils/data-utils';
+
+const posts = (await getCollection('blog')).sort(sortItemsByDateDesc);
+
+const projects = (await getCollection('projects')).sort(sortItemsByDateDesc);
+const featuredProjects = projects.filter(({ data }) => data.isFeatured);
+---
+
+<BaseLayout description={siteConfig.description} image={siteConfig.image}>
+    <Hero />
+    {
+        featuredProjects?.length > 0 && (
+            <div class="mb-16 sm:mb-24">
+                <h2 class="mb-4 text-3xl font-serif font-bold border-t-4 pt-6 sm:mb-8">Projects</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-10">
+                    {featuredProjects.map((project) => (
+                        <ProjectPreview project={project} headingLevel="h3" />
+                    ))}
+                </div>
+                <div class="mt-4 sm:mt-6">
+                    <Button href="/projects">View All Projects →</Button>
+                </div>
+            </div>
+        )
+    }
+    {
+        posts?.length > 0 && (
+            <div class="mt-16 sm:mt-24 mb-8">
+                <h2 class="mb-4 text-3xl font-serif font-bold border-t-4 pt-6 sm:mb-8">Blog</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-10">
+                    {posts.map((post) => (
+                        <PostPreview post={post} headingLevel="h3" />
+                    ))}
+                </div>
+                <div class="mt-4 sm:mt-6">
+                    <Button href="/blog">View All Posts →</Button>
+                </div>
+            </div>
+        )
+    }
+    <section class="mt-16 sm:mt-24 mb-8">
+        <h2 class="mb-4 text-3xl font-serif font-bold border-t-4 pt-6">About this site</h2>
+        <div class="prose prose-sm sm:prose max-w-none">
+            <AboutSite />
+        </div>
+    </section>
+</BaseLayout>

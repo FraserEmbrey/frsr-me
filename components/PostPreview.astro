@@ -1,0 +1,50 @@
+---
+import { Image } from 'astro:assets';
+import { type CollectionEntry } from 'astro:content';
+import FormattedDate from './FormattedDate.astro';
+
+type Props = { post: CollectionEntry<'blog'>; class?: string; headingLevel?: 'h2' | 'h3' };
+
+const { post, class: className, headingLevel = 'h2' } = Astro.props;
+const { title, publishDate, updatedDate, excerpt } = post.data;
+const TitleTag = headingLevel;
+---
+
+<a
+    href={`/blog/${post.id}/`}
+    class:list={[
+        'block bg-card bg rounded-xl shadow-md transition-all duration-200 hover:scale-105 hover:shadow-lg active:scale-100 p-0 overflow-hidden',
+        className
+    ]}
+>
+    {
+        post.data.seo?.image?.src && (
+            <div class="p-4 pb-0">
+                <Image
+                    src={post.data.seo.image.src}
+                    alt={post.data.seo.image.alt || title}
+                    class="w-full object-cover aspect-[2/1] rounded-xl"
+                    loading="lazy"
+                />
+            </div>
+        )
+    }
+    <div class="p-4">
+        <TitleTag class="text-lg font-bold mb-1">{title}</TitleTag>
+        <div class="text-sm font-medium text-main opacity-70 mb-2">
+            <FormattedDate date={publishDate} />
+            {
+                updatedDate && (
+                    <>
+                        {' '}
+                        <span>
+                            (Updated on <FormattedDate date={updatedDate} />)
+                        </span>
+                    </>
+                )
+            }
+        </div>
+        <hr class="my-2 border-gray-800 dark:border-gray-200" />
+        {excerpt && <div class="text-sm font-normal truncate">{excerpt}</div>}
+    </div>
+</a>
