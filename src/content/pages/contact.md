@@ -20,7 +20,7 @@ Brighton, UK (Remote and hybrid work available)
 
 ---
 
-<form name="contact" method="POST" data-netlify="true" class="mt-8 flex flex-col gap-4">
+<form name="contact" method="POST" action="/success" data-netlify="true" class="mt-8 flex flex-col gap-4">
   <input type="hidden" name="form-name" value="contact" />
   <label>
     Name
