@@ -47,7 +47,7 @@
 @theme inline {
     --font-sans: 'Satoshi', sans-serif;
     --font-sans--font-feature-settings: "salt";
-    --font-serif: 'Petrona', serif;
+    --font-serif: 'Petrona Variable', serif;
     --text-color-main: var(--text-main);
     --text-color-link: var(--text-link);
     --color-card: var(--bg-card);
