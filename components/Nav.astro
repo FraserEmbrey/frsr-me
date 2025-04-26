@@ -1,0 +1,34 @@
+---
+import siteConfig from '../data/site-config';
+import NavLink from './NavLink.astro';
+
+const navLinks = siteConfig.headerNavLinks || [];
+---
+
+<nav class="min-h-10 pt-4 pb-12 relative sm:min-h-14">
+    {
+        navLinks.length > 0 && (
+            <div class="w-full max-w-3xl mx-auto relative flex justify-between items-center">
+                <div class="w-8 h-8">
+                    <a id="logoAnchor" href="/">
+                        <svg class="text-main hover:opacity-60" width="36px" id="navLogo" fill="currentColor" viewBox="0 0 200 200">
+                            <g stroke="none" fill-rule="evenodd">
+                                <polygon points="100,10 5,85 100,190 35,100" />
+                                <polygon points="195,150 100,150 195,50 100,50" />
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <ul id="menu-items" class="menu flex gap-6">
+                    {navLinks.map((link) => (
+                        <li class="py-1">
+                            <NavLink class="text-xl font-bold font-sans text-main opacity-60 hover:opacity-40" href={link.href}>
+                                {link.text}
+                            </NavLink>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        )
+    }
+</nav>
