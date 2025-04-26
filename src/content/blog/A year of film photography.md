@@ -36,7 +36,7 @@ I tried a more experimental film with Candido 400, which I shot in Bratislava. I
 Over the last year I’ve shot film on several trips: both colour and black and white alongside digital. Many of the images I’ve taken on film have been favourites. I’ve loved the colour, texture and process of taking them. It’s been a creative and fun experience.![](images/IMG_7713.jpeg)<!-- {"width":325} -->![](images/IMG_7703.jpeg)<!-- {"width":325} -->![](images/IMG_7705.jpeg)
 
 ## Part 3: creative impact
-The limitations of film photography are often celebrated as creative constraints. You’re stuck with a single ISO, a single baked-in ‘look’, it’s hard or impossible to take a burst depending on the camera, and you can take at most 36 shots at once. Then you have no idea what the final image looks like until you develop and print/scan it.
+The limitations of film photography are often celebrated as constraints that engender creativity. You’re stuck with a single ISO, a single baked-in ‘look’, it’s hard or impossible to take a burst depending on the camera, and you can take at most 36 shots at once. Then you have no idea what the final image looks like until you develop and print/scan it.
 
 Also, there is a degree of unpredictability involved; light leaks, halation, exposure issues and more, can create novelty. However, these effects are not really part of the photographer’s creative choice.
 ![](images/000092020015.jpeg)
