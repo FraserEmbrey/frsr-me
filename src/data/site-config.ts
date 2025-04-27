@@ -55,8 +55,8 @@ const siteConfig: SiteConfig = {
         { text: 'Projects', href: '/projects' },
         { text: 'Blog', href: '/blog' },
         { text: 'Contact', href: '/contact' },
-        { text: 'Photography', href: '/photography' },
         { text: 'About', href: '/about' },
+        { text: 'Photography', href: 'https://fraser.photography' },
     ],
     socialLinks: [
         // Professional

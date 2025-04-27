@@ -27,8 +27,6 @@ This is my portfolio website which was built off of the Dante theme, which is a 
 
 ## Project Structure
 
-Inside of Dante Astro theme, you'll see the following folders and files:
-
 ```text
 ├── public/
 ├── src/
@@ -74,4 +72,4 @@ Check out [our documentation](https://docs.astro.build) or jump into our [Discor
 
 ## License
 
-Licensed under the [GPL-3.0](https://github.com/JustGoodUI/dante-astro-theme/blob/main/LICENSE) license.
+Licensed under the [GPL-3.0](https://github.com/fraserembrey/frsr-me/blob/main/LICENSE) license.
