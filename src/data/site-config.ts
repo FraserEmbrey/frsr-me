@@ -42,7 +42,7 @@ const siteConfig: SiteConfig = {
     title: 'Fraser Embrey | UI/UX Designer',
     description: "I'm a UI/UX designer with a passion for creating beautiful and functional user experiences.",
     image: {
-        src: '/preview.jpg',
+        src: '/preview.webp',
         alt: 'Website preview'
     },
     headerNavLinks: [
