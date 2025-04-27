@@ -10,6 +10,8 @@ seo:
     src: "/src/content/blog/images/hdr-cover.jpg"
     alt: "Before and after HDR example with sunset scene"
 ---
+import { Image } from 'astro:assets';
+import sdrImage from './images/non-hdr.jpg'
 
 A photograph often struggles to reproduce what we can actually see, the colours and light cannot match the real world.
 
@@ -29,9 +31,9 @@ Done with intention, HDR reveals the scene more closely as you *saw*, not a fant
 
 ## Before and After Examples
 <div class="flex flex-wrap gap-4">
-  <img src="images/non-hdr.jpg" class="w-2/5 rounded" alt="SDR version"/>
-  <img src="images/hdr-version.avif" class="w-2/5 rounded" alt="HDR version"/>
-</div>
+  <Image class="w-2/5" src={sdrImage} format="avif" alt="SDR version" />
+  <img class="w-2/5" src="/hdr-version.avif" alt="HDR version" />
+  </div>
 
 ---
 
