@@ -29,8 +29,8 @@ Done with intention, HDR reveals the scene more closely as you *saw*, not a fant
 
 ## Before and After Examples
 <div class="flex flex-wrap gap-4">
-  <img src="/src/content/blog/images/non-hdr.jpg" class="w-2/5 rounded" alt="SDR version"/>
-  <img src="/src/content/blog/images/hdr-version.avif" class="w-2/5 rounded" alt="HDR version"/>
+  <img src="images/non-hdr.jpg" class="w-2/5 rounded" alt="SDR version"/>
+  <img src="images/hdr-version.avif" class="w-2/5 rounded" alt="HDR version"/>
 </div>
 
 ---
